@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="DB name:"
+			android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+		<EditText
+			android:layout_width="wrap_content"
+			android:inputType="textPersonName"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:id="@+id/name"/>
+
+	</LinearLayout>
+
+	<EditText
+		android:layout_width="wrap_content"
+		android:inputType="textMultiLine"
+		android:layout_height="wrap_content"
+		android:ems="25"
+		android:id="@+id/mlCommand"/>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Read file:"
+			android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+		<EditText
+			android:layout_width="wrap_content"
+			android:inputType="textPersonName"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:id="@+id/file"/>
+
+	</LinearLayout>
+
+	<Button
+		android:layout_width="wrap_content"
+		style="?android:attr/buttonStyleSmall"
+		android:layout_height="wrap_content"
+		android:text="RUN"
+		android:onClick="Run"/>
+
+</LinearLayout>
+
